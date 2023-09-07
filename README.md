@@ -10,3 +10,4 @@
 Or you can just modify the configuration
 
 3. Bring up docker compose file '''docker compose -d```
+4. You can either just using single runner or concurrent runner using custom config.toml

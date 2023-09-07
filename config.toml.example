@@ -1,0 +1,50 @@
+concurrent = 3
+
+[[runners]]
+  name = "gitlab-runners-0"
+  url = "https://git.example.com"
+  token = "<REPLACE_WITH_YOUR_GITLAB_RUNNER_REGISTRATION_TOKEN>"
+  limit = 0
+  executor = "docker"
+  builds_dir = ""
+  [runners.docker]
+    host = ""
+    image = "alpine:3.18"
+    privileged = false
+    disable_cache = false
+    cache_dir = "/cache"
+
+[[runners]]
+  name = "gitlab-runners-1"
+  url = "https://git.example.com"
+  token = "<REPLACE_WITH_YOUR_GITLAB_RUNNER_REGISTRATION_TOKEN>"
+  limit = 0
+  executor = "docker"
+  builds_dir = ""
+  [runners.docker]
+    host = ""
+    image = "alpine:3.18"
+    privileged = false
+    disable_cache = false
+    cache_dir = "/cache"
+
+[[runners]]
+  name = "gitlab-runners-3"
+  url = "https://git.example.com"
+  token = "<REPLACE_WITH_YOUR_GITLAB_RUNNER_REGISTRATION_TOKEN>"
+  limit = 0
+  executor = "docker"
+  builds_dir = ""
+  [runners.docker]
+    host = ""
+    image = "alpine:3.18"
+    privileged = false
+    disable_cache = false
+    cache_dir = "/cache"
+
+# More information
+## https://docs.gitlab.com/runner/
+## https://docs.gitlab.com/runner/configuration/
+
+# Complete configuration settings example
+## https://github.com/veertuinc/gitlab-runner/blob/master/config.toml.example

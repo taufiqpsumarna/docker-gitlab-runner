@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  gitlab-runner-dockerlab-1:
+    image: gitlab/gitlab-runner:alpine3.18 # You can use alpine:3.18 or latest tag version
+    container_name: dockerlab-gitlab-runner-1
+    restart: always
+    volumes:
+     - ./config:/etc/gitlab-runner
+     - /var/run/docker.sock:/var/run/docker.sock
+    env_file:
+     - .env
+    networks:
+        - gitlab-network
+
+networks:
+  gitlab-network:
+    name: gitlab-network

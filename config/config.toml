@@ -9,7 +9,7 @@ concurrent = 4
   builds_dir = ""
   [runners.docker]
     host = ""
-    image = "alpine:3.18"
+    image = "docker:24.0.6-dind-alpine3.18"
     privileged = false
     disable_cache = false
     cache_dir = "/cache"
@@ -23,7 +23,7 @@ concurrent = 4
   builds_dir = ""
   [runners.docker]
     host = ""
-    image = "alpine:3.18"
+    image = "docker:24.0.6-dind-alpine3.18"
     privileged = false
     disable_cache = false
     cache_dir = "/cache"
@@ -37,7 +37,7 @@ concurrent = 4
   builds_dir = ""
   [runners.docker]
     host = ""
-    image = "alpine:3.18"
+    image = "docker:24.0.6-dind-alpine3.18"
     privileged = false
     disable_cache = false
     cache_dir = "/cache"
@@ -51,7 +51,7 @@ concurrent = 4
   builds_dir = ""
   [runners.docker]
     host = ""
-    image = "alpine:3.18"
+    image = "docker:24.0.6-dind-alpine3.18"
     privileged = false
     disable_cache = false
     cache_dir = "/cache"

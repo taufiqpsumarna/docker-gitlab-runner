@@ -13,6 +13,7 @@ concurrent = 4
     privileged = false
     disable_cache = false
     cache_dir = "/cache"
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
 
 [[runners]]
   name = "gitlab-runners-1"
@@ -27,6 +28,7 @@ concurrent = 4
     privileged = false
     disable_cache = false
     cache_dir = "/cache"
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
 
 [[runners]]
   name = "gitlab-runners-3"
@@ -41,6 +43,7 @@ concurrent = 4
     privileged = false
     disable_cache = false
     cache_dir = "/cache"
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
 
 [[runners]]
   name = "gitlab-runners-4"
@@ -55,6 +58,7 @@ concurrent = 4
     privileged = false
     disable_cache = false
     cache_dir = "/cache"
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
 
 # Complete configuration settings example
 ## https://github.com/veertuinc/gitlab-runner/blob/master/config.toml.example

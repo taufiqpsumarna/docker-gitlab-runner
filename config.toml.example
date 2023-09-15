@@ -13,6 +13,7 @@ concurrent = 3
     privileged = false
     disable_cache = false
     cache_dir = "/cache"
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
 
 [[runners]]
   name = "gitlab-runners-1"
@@ -27,6 +28,7 @@ concurrent = 3
     privileged = false
     disable_cache = false
     cache_dir = "/cache"
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
 
 [[runners]]
   name = "gitlab-runners-3"
@@ -41,6 +43,7 @@ concurrent = 3
     privileged = false
     disable_cache = false
     cache_dir = "/cache"
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
 
 # More information
 ## https://docs.gitlab.com/runner/

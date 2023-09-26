@@ -29,6 +29,18 @@ concurrent = 3
     disable_cache = false
     cache_dir = "/cache"
     volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
+  [runners.cache]
+    Type = "s3"
+    Path = "gitlab_runner_cache/"
+    Shared = true
+    [runners.cache.s3]
+      ServerAddress = "s3.amazonaws.com"
+      AccessKey = "<AWS_S3_ACCESS_KEY>"
+      SecretKey = "<AWS_S3_SECRET_KEY>"
+      BucketName = "git-idstar-group"
+      BucketLocation = "ap-southeast-1"
+      Insecure = false
+
 
 [[runners]]
   name = "gitlab-runners-3"
@@ -44,6 +56,18 @@ concurrent = 3
     disable_cache = false
     cache_dir = "/cache"
     volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
+  [runners.cache]
+    Type = "s3"
+    Path = "gitlab_runner_cache/"
+    Shared = true
+    [runners.cache.s3]
+      ServerAddress = "s3.amazonaws.com"
+      AccessKey = "<AWS_S3_ACCESS_KEY>"
+      SecretKey = "<AWS_S3_SECRET_KEY>"
+      BucketName = "git-idstar-group"
+      BucketLocation = "ap-southeast-1"
+      Insecure = false
+
 
 # More information
 ## https://docs.gitlab.com/runner/
